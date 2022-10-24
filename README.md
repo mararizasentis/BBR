@@ -35,8 +35,7 @@ A brief description of the main function of each python script is provided in th
 
 | Script                     | Functionality                                                                                |
 | -------------------------- | ------------------------------------------------------------------------------------------   |
-| main.py                    | 1)	Generate the orthomosaics, DSM, and  DTM
-                               
+| main.py                    | 1)	Generate the orthomosaics, DSM, and  DTM                             
                                2)	Run the whole algorithm at once by calling the rest of the scripts                        |                    
 | georeferencing.py          | Georeference of the orthomosaic, DSM, and DTM to the appropriate EPSG code                   | 
 | crop_extent.py             | Mask the orthomosaic, DSM, and DTM to the Region of Interest                                 | 
