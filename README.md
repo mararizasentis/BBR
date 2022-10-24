@@ -1,5 +1,5 @@
 # NOBLE-ROT algorithm
-The NOBLE-ROT algorithm is an open-source standard workflow based on phenological parameters for automatic *Botrytis cinerea* detection in vineyards.
+The NOBLE-ROT algorithm is an open-source standard workflow based on phenological parameters for automatic *Botrytis cinerea* detection in vineyards using UAV images.
 
 
 ## How to run the code?
