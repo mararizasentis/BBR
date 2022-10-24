@@ -25,22 +25,36 @@ The following table summarizes the required inputs to implement the NOBLE-ROT al
 
 ## Which folders are necessary to run the code?
 Inside the project's folder, in this case named FlexiGroBots, 4 folders are required:
-1) Field_extent: 
-2) Frame:
+1) Field_extent: it includes the shapefile of the Region of Interest (ROI).
+2) Frame: two shapefile grids are included in this folder. The first grid refers to the plant-to-plnt distance and the distance between rows. The second one is the shadows grid (see table above). 
 3) GT: it contains the ground truth shapefile with the locations of the diseased plants. 
 4) outputs: this folder is subdivided into two folders (middle_product and Deliverables)
 
 ## What is the purpose of each function?
 A brief description of the main function of each python script is provided in the following table. 
 
-## Training dataset
-To train the NOBLE-ROT software, a training dataset is made available. 
+| Script                     | Functionality                                                                                |
+| -------------------------- | ------------------------------------------------------------------------------------------   |
+| main.py                    | 1)	Generate the orthomosaics, DSM, and  DTM
+                               
+                               2)	Run the whole algorithm at once by calling the rest of the scripts                        |                    
+| georeferencing.py          | Georeference of the orthomosaic, DSM, and DTM to the appropriate EPSG code                   | 
+| crop_extent.py             | Mask the orthomosaic, DSM, and DTM to the Region of Interest                                 | 
+| CHM.py                     | Generate the Canopy Height Model of the vineyard                                             | 
+| NDVI.py                    | Compute the NDVI of the vineyard                                                             | 
+| shadows.py                 | Extract the shadows area to estimate the Leaf Area Index                                     | 
+| extract_values.ppy         | Apply zonal statistics at plant-level                                                        | 
+| botrytis_classification.py | Select the plants which are not affected by botrytis                                         |
+| points_in_grid.py          | Select which plants are affected by botrytis thanks to ground truth information              | 
+| join_stats_disease.py      | Join the zonal statistics results with the health status information (Botrytis, no Botrytis) | 
+| randomForest.py            | Train/test the Random Forest algorithm for botrytis detection                                | 
+| heatmap.py                 | Generate a heatmap with the hotspots of the potential risk of *Botrytis cinerea*             | 
+| PDF.py                     | Generate a PDF report informing about the potential risk of *Botrytis cinerea*               | 
+
+## Available dataset
+To train or validate the NOBLE-ROT software, a dataset [dataset](https://zenodo.org/record/7064895#.Y1ZZMnZBxPZ) is made available. 
 
 ## Citation
-OpenDroneMap Authors ODM - A command line toolkit to generate maps, point clouds, 3D models and DEMs from drone, balloon or kite images. OpenDroneMap/ODM GitHub Page 2020; https://github.com/OpenDroneMap/ODM
+NOBLE-ROT algorithm - An open-source standard workflow based on phenological crop parameters for automatic Botrytis cinerea detection in vineyards. mararizasentis/NOBLE-ROT GitHub Page 2022; https://github.com/mararizasentis/NOBLE-ROT
 
-
-link to odm
-You should have a folder with the orthomosaics inside, the new and the old one (train/test). 
-Mention also the folders to have: outputs, frame, GT...
 
