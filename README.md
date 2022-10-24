@@ -24,7 +24,7 @@ The following table summarizes the required inputs to implement the NOBLE-ROT al
 | EPSG code                | EPSG code to which the Region of Interest is georeferenced                         | georeferencing.py |
 | Min and max vine height  | Minimum and maximum height of the vine plants                                      | CHM.py            |
 
-## Which folders are necessary to run the code?
+## Which folders are necessary?
 Inside the project's folder, in this case named FlexiGroBots, 4 folders are required:
 1) Field_extent: it includes the shapefile of the Region of Interest (ROI).
 2) Frame: two shapefile grids are included in this folder. The first grid refers to the plant-to-plnt distance and the distance between rows. The second one is the shadows grid (see table above). 
