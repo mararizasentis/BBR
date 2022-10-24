@@ -9,7 +9,7 @@ The first part of the code (see lines 6-12 in the main.py script) is provided by
 
 Afterward, the novelty of the NOBLE-ROT algorithm starts running. 
 
-**The directories of each file should be modified in order to properly run the code
+\*The directories of each file should be modified in order to properly run the code\
 
 ## Which inputs are required?
 The following table summarizes the required inputs to implement the NOBLE-ROT algorithm. A description of each file required is provided, along with the script that requires the input file. 
@@ -21,6 +21,7 @@ The following table summarizes the required inputs to implement the NOBLE-ROT al
 | Grid.shp                 | Plant-to-plant distance and the distance between rows, in this case (2.5 x 3 m)    | extract_values.py |
 | Shadows_grid.shp         | Same as grid.shp, but projected for the shadows, see [link](https://oeno-one.eu/article/view/4639) for further information  | shadows.py |
 | GT.shp                   | Ground Truth points with the location of the diseased plants                       | points_in_grid.py |
+| EPSG code                | EPSG code to which the Region of Interest is georeferenced                         | georeferencing.py |
 | Min and max vine height  | Minimum and maximum height of the vine plants                                      | CHM.py            |
 
 ## Which folders are necessary to run the code?
