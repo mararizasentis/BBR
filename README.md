@@ -33,22 +33,21 @@ Inside the project's folder, in this case named FlexiGroBots, 4 folders are requ
 ## What is the purpose of each function?
 A brief description of the main function of each python script is provided in the following table. 
 
-| Script                     | Functionality                                                                                |
-| -------------------------- | ------------------------------------------------------------------------------------------   |
-| main.py                    | 1)	Generate the orthomosaics, DSM, and  DTM                             
-                               2)	Run the whole algorithm at once by calling the rest of the scripts                        |                    
-| georeferencing.py          | Georeference of the orthomosaic, DSM, and DTM to the appropriate EPSG code                   | 
-| crop_extent.py             | Mask the orthomosaic, DSM, and DTM to the Region of Interest                                 | 
-| CHM.py                     | Generate the Canopy Height Model of the vineyard                                             | 
-| NDVI.py                    | Compute the NDVI of the vineyard                                                             | 
-| shadows.py                 | Extract the shadows area to estimate the Leaf Area Index                                     | 
-| extract_values.ppy         | Apply zonal statistics at plant-level                                                        | 
-| botrytis_classification.py | Select the plants which are not affected by botrytis                                         |
-| points_in_grid.py          | Select which plants are affected by botrytis thanks to ground truth information              | 
-| join_stats_disease.py      | Join the zonal statistics results with the health status information (Botrytis, no Botrytis) | 
-| randomForest.py            | Train/test the Random Forest algorithm for botrytis detection                                | 
-| heatmap.py                 | Generate a heatmap with the hotspots of the potential risk of *Botrytis cinerea*             | 
-| PDF.py                     | Generate a PDF report informing about the potential risk of *Botrytis cinerea*               | 
+| Script                     | Functionality                                                                                                               |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------   |
+| main.py                    | (1)	Generate the orthomosaics, DSM, and  DTM, and (2)  Run the whole algorithm at once by calling the rest of the scripts  |           
+| georeferencing.py          | Georeference of the orthomosaic, DSM, and DTM to the appropriate EPSG code                                                  | 
+| crop_extent.py             | Mask the orthomosaic, DSM, and DTM to the Region of Interest                                                                | 
+| CHM.py                     | Generate the Canopy Height Model of the vineyard                                                                            | 
+| NDVI.py                    | Compute the NDVI of the vineyard                                                                                            | 
+| shadows.py                 | Extract the shadows area to estimate the Leaf Area Index                                                                    | 
+| extract_values.ppy         | Apply zonal statistics at plant-level                                                                                       | 
+| botrytis_classification.py | Select the plants which are not affected by botrytis                                                                        |
+| points_in_grid.py          | Select which plants are affected by botrytis thanks to ground truth information                                             | 
+| join_stats_disease.py      | Join the zonal statistics results with the health status information (Botrytis, no Botrytis)                                | 
+| randomForest.py            | Train/test the Random Forest algorithm for botrytis detection                                                               | 
+| heatmap.py                 | Generate a heatmap with the hotspots of the potential risk of *Botrytis cinerea*                                            | 
+| PDF.py                     | Generate a PDF report informing about the potential risk of *Botrytis cinerea*                                              | 
 
 ## Available dataset
 To train or validate the NOBLE-ROT software, a dataset [dataset](https://zenodo.org/record/7064895#.Y1ZZMnZBxPZ) is made available. 
