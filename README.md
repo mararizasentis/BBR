@@ -4,6 +4,7 @@ The NOBLE-ROT algorithm is an open-source standard workflow based on phenologica
 
 ## How to run the code?
 The NOBLE-ROT software can be executed in script mode or cross-platform inside a Python interpreter, such as PyCharm (JetBrains s.r.o., Prague, Czech Republic). 
+
 The first part of the code is provided by OpenDroneMap. Redirect to their [directory](https://github.com/OpenDroneMap/ODM) for further information on how to implement it. 
 
 ## Which inputs are required?
