@@ -5,11 +5,11 @@ import pandas as pd
 import subprocess
 res = subprocess.Popen(["docker", "run","--rm", "-v", "/home/saidlab/PycharmProjects/orthomosaics/old_orthomosaic/datasets:/datasets", "opendronemap/odm",
                             "--project-path", "/datasets/project/", "--dsm", "--dtm", "--feature-quality", "ultra",
-                            "--ignore-gsd", "--skip-report"])
+                            "--ignore-gsd", "--skip-report", "--force-gps", "--gcp", "/datasets/project/gcp_list.txt"])
 if res.wait() == 0:
     res2 = subprocess.Popen(["docker", "run","--rm", "-v", "/home/saidlab/PycharmProjects/orthomosaics/new_orthomosaic/datasets2:/datasets2", "opendronemap/odm",
                                 "--project-path", "/datasets2/project2/", "--dsm", "--dtm", "--feature-quality", "ultra",
-                                "--ignore-gsd", "--skip-report"])
+                                "--ignore-gsd", "--skip-report", "--force-gps", "--gcp", "/datasets2/project/gcp_list.txt"])
 
     if res2.wait() == 0:
 
