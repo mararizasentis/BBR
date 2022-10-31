@@ -1,5 +1,5 @@
 # NOBLE-ROT 
-NOBLE-ROT is an open-source standard workflow based on phenological parameters for automatic *Botrytis cinerea* detection in vineyards using UAV images.
+NOBLE-ROT is an open-source standard workflow based on biophysical parameters for automatic *Botrytis cinerea* assessment in vineyards using UAV images.
 
 
 ## How to run the code?
@@ -46,7 +46,7 @@ A brief description of the main function of each python script is provided in th
 | botrytis_classification.py | Select the plants which are not affected by botrytis                                                                        |
 | points_in_grid.py          | Select which plants are affected by botrytis thanks to ground truth information                                             | 
 | join_stats_disease.py      | Join the zonal statistics results with the health status information (Botrytis, no Botrytis)                                | 
-| randomForest.py            | Train/test the Random Forest algorithm for botrytis detection                                                               | 
+| randomForest.py            | Train/test the Random Forest algorithm for botrytis assessment                                                               | 
 | heatmap.py                 | Generate a heatmap with the hotspots of the potential risk of *Botrytis cinerea*                                            | 
 | PDF.py                     | Generate a PDF report informing about the potential risk of *Botrytis cinerea*                                              | 
 
