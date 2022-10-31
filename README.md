@@ -65,6 +65,4 @@ Three main actors are implied: the operator, the farmer, and the UAV. These acto
 To train or validate the NOBLE-ROT algorithm, an open-source [dataset](https://zenodo.org/record/7064895#.Y1ZZMnZBxPZ) is made available. 
 
 ## Citation
-NOBLE-ROT - An open-source standard workflow based on biophysical crop parameters for automatic Botrytis cinerea assessment in vineyards. mararizasentis/NOBLE-ROT GitHub Page 2022; https://github.com/mararizasentis/NOBLE-ROT
-
-
+NOBLE-ROT - An open-source standard workflow based on biophysical crop parameters for automatic *Botrytis cinerea* assessment in vineyards. mararizasentis/NOBLE-ROT GitHub Page 2022; https://github.com/mararizasentis/NOBLE-ROT
