@@ -14,6 +14,7 @@ Afterward, the novelty of the NOBLE-ROT algorithm starts running.
 ![Botrytis_flowchart drawio](https://user-images.githubusercontent.com/59556308/199081130-79aa5daf-5726-48bf-83cb-e6afc072c1c1.png)
 
 The next figure presents the workflow of the NOBLE-ROT algorithm as seen by the middle products and final outputs obtained at the main steps. The orthomosaic, the DSM, and the DTM are generated from the raw images captured by the UAV. Then, those products are transformed into more middle products to train the random forest, such as the shadows, the NDVI, and the CHM. Finally, the heatmap with the probability of botrytis presence and an assessment report are generated. 
+
 ![workflow](https://user-images.githubusercontent.com/59556308/199081486-6453e008-e356-41c2-a965-45a459499ba7.JPG)
 
 ## Which inputs are required?
@@ -57,6 +58,7 @@ A brief description of the main function of each python script is provided in th
 
 ## Use case diagram
 Three main actors are implied: the operator, the farmer, and the UAV. These actors are responsible for planning the UAV mission and executing it. The output of this process is the acquisition of the image dataset, which is the main input of the NOBLE-ROT algorithm. The next step is the actual run of the algorithm, from which more image datasets are generated, for instance, the CHM and the NDVI maps. In the end, the final interaction with the system is the obtention of the botrytis heatmap and the assessment report. 
+
 ![Use_case](https://user-images.githubusercontent.com/59556308/199081522-12f708cd-c5a0-4fdd-8dd6-abd98cd74741.JPG)
 
 ## Available dataset
