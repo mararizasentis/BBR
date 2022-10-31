@@ -51,7 +51,8 @@ A brief description of the main function of each python script is provided in th
 | PDF.py                     | Generate a PDF report informing about the potential risk of *Botrytis cinerea*                                              | 
 
 ## Use case 
-<img src="(C:\Users\ariza002\OneDrive - Wageningen University & Research\FLEXIGROBOTS\Journals\SoftwareX\FiguresTables" alt="Alt text" title="Optional title">
+![Use_case](https://user-images.githubusercontent.com/59556308/199080585-e8b17349-1af4-4086-b6ea-4c17e0be3218.JPG)
+
 
 ## Available dataset
 To train or validate the NOBLE-ROT algorithm, an open-source [dataset](https://zenodo.org/record/7064895#.Y1ZZMnZBxPZ) is made available. 
