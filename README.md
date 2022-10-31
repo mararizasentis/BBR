@@ -50,6 +50,9 @@ A brief description of the main function of each python script is provided in th
 | heatmap.py                 | Generate a heatmap with the hotspots of the potential risk of *Botrytis cinerea*                                            | 
 | PDF.py                     | Generate a PDF report informing about the potential risk of *Botrytis cinerea*                                              | 
 
+## Use case 
+![Alt text](C:\Users\ariza002\OneDrive - Wageningen University & Research\FLEXIGROBOTS\Journals\SoftwareX\FiguresTables "Optional title")
+
 ## Available dataset
 To train or validate the NOBLE-ROT algorithm, an open-source [dataset](https://zenodo.org/record/7064895#.Y1ZZMnZBxPZ) is made available. 
 
