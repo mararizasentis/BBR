@@ -1,24 +1,24 @@
-# BB-ROT 
-BB-ROT is an open-source standard workflow based on biophysical parameters for automatic *Botrytis cinerea* assessment in vineyards using UAV images.
+# BBR
+BBR is an open-source standard workflow based on biophysical parameters for automatic *Botrytis cinerea* assessment in vineyards using UAV images.
 
 ## How to run the code?
-The BB-ROT software can be executed in script mode or cross-platform inside a Python interpreter, such as PyCharm (JetBrains s.r.o., Prague, Czech Republic). 
+The BBR software can be executed in script mode or cross-platform inside a Python interpreter, such as PyCharm (JetBrains s.r.o., Prague, Czech Republic). 
 
 The first part of the code (see lines 6-12 in the main.py script) is provided by OpenDroneMap. Redirect to their [directory](https://github.com/OpenDroneMap/ODM) for further information on how to implement it. This pats generates the orthomosaics, the Digital Surface Models (DSM), and the Digital Terrain Models (DTM).
 
-Afterward, the novelty of the BB-ROT algorithm starts running. 
+Afterward, the novelty of the BBR algorithm starts running. 
 
 \*The directories of each file should be modified in order to properly run the code.
 
 ## Workflow
 ![Botrytis_flowchart drawio](https://user-images.githubusercontent.com/59556308/199081130-79aa5daf-5726-48bf-83cb-e6afc072c1c1.png)
 
-The next figure presents the workflow of the BB-ROT algorithm as seen by the middle products and final outputs obtained at the main steps. The orthomosaic, the DSM, and the DTM are generated from the raw images captured by the UAV. Then, those products are transformed into more middle products to train the random forest, such as the shadows, the NDVI, and the CHM. Finally, the heatmap with the probability of botrytis presence and an assessment report are generated. 
+The next figure presents the workflow of the BBR algorithm as seen by the middle products and final outputs obtained at the main steps. The orthomosaic, the DSM, and the DTM are generated from the raw images captured by the UAV. Then, those products are transformed into more middle products to train the random forest, such as the shadows, the NDVI, and the CHM. Finally, the heatmap with the probability of botrytis presence and an assessment report are generated. 
 
 ![workflow](https://user-images.githubusercontent.com/59556308/199081486-6453e008-e356-41c2-a965-45a459499ba7.JPG)
 
 ## Which inputs are required?
-The following table summarizes the required inputs to implement the BB-ROT algorithm. A description of each file required is provided, along with the script that requires the input file. 
+The following table summarizes the required inputs to implement the BBR algorithm. A description of each file required is provided, along with the script that requires the input file. 
 
 | Name                     | Description                                                                        | Script            |
 | ------------------------ | ---------------------------------------------------------------------------------- | ----------------- |
@@ -57,12 +57,12 @@ A brief description of the main function of each python script is provided in th
 | PDF.py                     | Generate a PDF report informing about the potential risk of *Botrytis cinerea*                                              | 
 
 ## Use case diagram
-Three main actors are implied: the operator, the farmer, and the UAV. These actors are responsible for planning the UAV mission and executing it. The output of this process is the acquisition of the image dataset, which is the main input of the BB-ROT algorithm. The next step is the actual run of the algorithm, from which more image datasets are generated, for instance, the CHM and the NDVI maps. In the end, the final interaction with the system is the obtention of the botrytis heatmap and the assessment report. 
+Three main actors are implied: the operator, the farmer, and the UAV. These actors are responsible for planning the UAV mission and executing it. The output of this process is the acquisition of the image dataset, which is the main input of the BBR algorithm. The next step is the actual run of the algorithm, from which more image datasets are generated, for instance, the CHM and the NDVI maps. In the end, the final interaction with the system is the obtention of the botrytis heatmap and the assessment report. 
 
 ![Use_case](https://user-images.githubusercontent.com/59556308/199081522-12f708cd-c5a0-4fdd-8dd6-abd98cd74741.JPG)
 
 ## Available dataset
-To train or validate the BB-ROT algorithm, an open-source [dataset](https://zenodo.org/record/7064895#.Y1ZZMnZBxPZ) is made available. 
+To train or validate the BBR algorithm, an open-source [dataset](https://zenodo.org/record/7064895#.Y1ZZMnZBxPZ) is made available. 
 
 ## Citation
-BB-ROT - An open-source standard workflow based on biophysical crop parameters for automatic *Botrytis cinerea* assessment in vineyards. mararizasentis/NOBLE-ROT GitHub Page 2022; https://github.com/mararizasentis/BB-ROT
+BBR - An open-source standard workflow based on biophysical crop parameters for automatic *Botrytis cinerea* assessment in vineyards. mararizasentis/NOBLE-ROT GitHub Page 2022; https://github.com/mararizasentis/BBR
