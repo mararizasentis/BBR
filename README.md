@@ -6,19 +6,19 @@ The BBR software can be executed in script mode or cross-platform inside a Pytho
 
 The first part of the code (see lines 6-12 in the main.py script) is provided by OpenDroneMap. Redirect to their [directory](https://github.com/OpenDroneMap/ODM) for further information on how to implement it. This pats generates the orthomosaics, the Digital Surface Models (DSM), and the Digital Terrain Models (DTM).
 
-Afterward, the novelty of the BBR algorithm starts running. 
+Afterward, the novelty of the BBR software starts running. 
 
 \*The directories of each file should be modified in order to properly run the code.
 
 ## Workflow
 ![Botrytis_flowchart drawio](https://user-images.githubusercontent.com/59556308/199081130-79aa5daf-5726-48bf-83cb-e6afc072c1c1.png)
 
-The next figure presents the workflow of the BBR algorithm as seen by the middle products and final outputs obtained at the main steps. The orthomosaic, the DSM, and the DTM are generated from the raw images captured by the UAV. Then, those products are transformed into more middle products to train the random forest, such as the shadows, the NDVI, and the CHM. Finally, the heatmap with the probability of botrytis presence and an assessment report are generated. 
+The next figure presents the workflow of the BBR software as seen by the middle products and final outputs obtained at the main steps. The orthomosaic, the DSM, and the DTM are generated from the raw images captured by the UAV. Then, those products are transformed into more middle products to train the random forest, such as the shadows, the NDVI, and the CHM. Finally, the heatmap with the probability of botrytis presence and an assessment report are generated. 
 
 ![workflow](https://user-images.githubusercontent.com/59556308/199081486-6453e008-e356-41c2-a965-45a459499ba7.JPG)
 
 ## Which inputs are required?
-The following table summarizes the required inputs to implement the BBR algorithm. A description of each file required is provided, along with the script that requires the input file. 
+The following table summarizes the required inputs to implement the BBR software. A description of each file required is provided, along with the script that requires the input file. 
 
 | Name                     | Description                                                                        | Script            |
 | ------------------------ | ---------------------------------------------------------------------------------- | ----------------- |
@@ -42,7 +42,7 @@ A brief description of the main function of each python script is provided in th
 
 | Script                     | Functionality                                                                                                               |
 | -------------------------- | -------------------------------------------------------------------------------------------------------------------------   |
-| main.py                    | (1)	Generate the orthomosaics, DSM, and  DTM, and (2)  Run the whole algorithm at once by calling the rest of the scripts  |           
+| main.py                    | (1)	Generate the orthomosaics, DSM, and  DTM, and (2)  Run the whole software at once by calling the rest of the scripts  |           
 | georeferencing.py          | Georeference of the orthomosaic, DSM, and DTM to the appropriate EPSG code                                                  | 
 | crop_extent.py             | Mask the orthomosaic, DSM, and DTM to the Region of Interest                                                                | 
 | CHM.py                     | Generate the Canopy Height Model of the vineyard                                                                            | 
@@ -57,12 +57,12 @@ A brief description of the main function of each python script is provided in th
 | PDF.py                     | Generate a PDF report informing about the potential risk of *Botrytis cinerea*                                              | 
 
 ## Use case diagram
-Three main actors are implied: the operator, the farmer, and the UAV. These actors are responsible for planning the UAV mission and executing it. The output of this process is the acquisition of the image dataset, which is the main input of the BBR algorithm. The next step is the actual run of the algorithm, from which more image datasets are generated, for instance, the CHM and the NDVI maps. In the end, the final interaction with the system is the obtention of the botrytis heatmap and the assessment report. 
+Three main actors are implied: the operator, the farmer, and the UAV. These actors are responsible for planning the UAV mission and executing it. The output of this process is the acquisition of the image dataset, which is the main input of the BBR software. The next step is the actual run of the software, from which more image datasets are generated, for instance, the CHM and the NDVI maps. In the end, the final interaction with the system is the obtention of the botrytis heatmap and the assessment report. 
 
 ![Use_case](https://user-images.githubusercontent.com/59556308/199081522-12f708cd-c5a0-4fdd-8dd6-abd98cd74741.JPG)
 
 ## Available dataset
-To train or validate the BBR algorithm, an open-source [dataset](https://zenodo.org/record/7064895#.Y1ZZMnZBxPZ) is made available. 
+To train or validate the BBR software, an open-source [dataset](https://zenodo.org/record/7064895#.Y1ZZMnZBxPZ) is made available. 
 
 ## Citation
 BBR - An open-source standard workflow based on biophysical crop parameters for automatic *Botrytis cinerea* assessment in vineyards. mararizasentis/BBR GitHub Page 2022; https://github.com/mararizasentis/BBR
