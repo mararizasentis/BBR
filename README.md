@@ -62,7 +62,7 @@ Three main actors are implied: the operator, the farmer, and the UAV. These acto
 ![Use_case](https://user-images.githubusercontent.com/59556308/199081522-12f708cd-c5a0-4fdd-8dd6-abd98cd74741.JPG)
 
 ## Available dataset
-To train or validate the BBR software, an open-source [dataset](https://zenodo.org/record/7064895#.Y1ZZMnZBxPZ) is made available. 
+To train or validate the BBR software, an open-source [dataset](https://doi.org/10.1016/j.dib.2022.108876) is made available. 
 
 ## Citation
 BBR - An open-source standard workflow based on biophysical crop parameters for automatic *Botrytis cinerea* assessment in vineyards. mararizasentis/BBR GitHub Page 2022; https://github.com/mararizasentis/BBR
