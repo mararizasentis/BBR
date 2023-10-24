@@ -1,5 +1,5 @@
 # BBR
-BBR is an open-source standard workflow based on biophysical parameters for automatic *Botrytis cinerea* assessment in vineyards using UAV images.
+BBR is an open-source standard workflow based on biophysical parameters for automatic *Botrytis cinerea* assessment in vineyards using UAV images. A journal article has been published to include all the information regarding the algorithm: https://doi.org/10.1016/j.softx.2023.101542.
 
 ## How to run the code?
 The BBR software can be executed in script mode or cross-platform inside a Python interpreter, such as PyCharm (JetBrains s.r.o., Prague, Czech Republic). 
